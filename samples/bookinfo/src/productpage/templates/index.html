@@ -13,6 +13,17 @@
 <link rel="stylesheet" href="static/bootstrap/css/bootstrap-theme.min.css">
 {% endblock %}
 {% block scripts %}
+
+<script src="https://cdn.signalfx.com/o11y-gdi-rum/latest/splunk-otel-web.js" crossorigin="anonymous"></script>
+<script>
+    SplunkRum.init({
+        realm: "us1",
+        rumAccessToken: "Uxoaw3dTiz0EoPfnwtRSuw",
+        applicationName: "bookstore",
+        deploymentEnvironment: "dev"
+    });
+</script>
+
 <!-- Latest compiled and minified JavaScript -->
 <script src="static/jquery.min.js"></script>
 
